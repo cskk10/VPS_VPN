@@ -1,0 +1,19 @@
+Shadowsocks
+
+Server: 192.129.155.133
+Port: 8388
+Method: chacha20-ietf-poly1305
+Password: d697f701ca2eb0144efeb42554f4b9e8
+
+Shadowrocket URI:
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkNjk3ZjcwMWNhMmViMDE0NGVmZWI0MjU1NGY0YjllOA@192.129.155.133:8388#vps-ss
+
+Clash/Mihomo proxy snippet:
+proxies:
+  - name: "vps-ss"
+    type: ss
+    server: 192.129.155.133
+    port: 8388
+    cipher: chacha20-ietf-poly1305
+    password: "d697f701ca2eb0144efeb42554f4b9e8"
+    udp: true
